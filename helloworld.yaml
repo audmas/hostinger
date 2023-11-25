@@ -9,6 +9,58 @@
         state: present
         key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       register: ssh_key_results
-    - name: open dir
-      raw: echo hello > hello.txt
+    - name: Testavimo tikslais
+      raw: echo labas > hello123.txt
+    - name: Ensure bgpd is enabled in /etc/frr/daemons
+      lineinfile:
+        path: /etc/frr/daemons
+        regexp: '^bgpd='
+        line: 'bgpd=yes'
+    - name: Restart FRR service
+      ansible.builtin.service:
+        name: frr
+        state: restarted
+- name: Configure BGP
+  hosts: r1:r2 
+  become: true
+  tasks:
+    - name: Create hellotxt on r1, testavimo tikslais
+      raw: echo sw > sw1.txt
+      when: inventory_hostname == 'r1'
+
+    - name: BGP r1
+      raw: net add bgp autonomous-system 65000
+      when: inventory_hostname == 'r1'
+
+    - name: r1 p1
+      raw: net add bgp neighbor 192.168.15.79 remote-as 65001
+      when: inventory_hostname == 'r1'
+
+    - name: r1 p2
+      raw: net add bgp ipv4 unicast neighbor 192.168.15.79 activate
+      when: inventory_hostname == 'r1'
+
+    - name: r1 p3
+      raw: net commit
+      when: inventory_hostname == 'r1'
+
+    - name: Create hellotxt on r2, testavimo tikslais
+      raw: echo sw2 > sw2.txt
+      when: inventory_hostname == 'r2'
+
+    - name: BGP r2
+      raw: net add bgp autonomous-system 65001
+      when: inventory_hostname == 'r2'
+
+    - name: r2 p1
+      raw: net add bgp neighbor 192.168.15.78 remote-as 65000
+      when: inventory_hostname == 'r2'
+
+    - name: r2 p2
+      raw: net add bgp ipv4 unicast neighbor 192.168.15.78 activate
+      when: inventory_hostname == 'r2'
+
+    - name: r2 p3
+      raw: net commit
+      when: inventory_hostname == 'r2'
       
