@@ -1,13 +1,15 @@
 1. app1
-   just run vagrant up
-   vagrant provision
+   just run <br /> 
+   vagrant up <br /> 
+   vagrant provision <br /> 
    it will make two cumulus v4.3.0 virtuals box'es and configure bgp in between
 2. app2
-   just run python3 ip.py
+   just run <br /> 
+   python3 ip.py <br /> 
    it will calculate if one subnet is hit by another
 3. app1-rework
-   start machines via test kitchen
-   kitchen create
-   it will make two cumulus v4.3.0 virtual box'es
-   kitchen converge
-   it will create bgp link between them
+   start machines via test kitchen <br /> 
+   kitchen create <br /> 
+   it will make two cumulus v4.3.0 virtual box'es <br /> 
+   kitchen converge <br /> 
+   it will create bgp link between them <br /> 
