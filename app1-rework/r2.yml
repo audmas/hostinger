@@ -1,0 +1,24 @@
+---
+- name: say hi
+  hosts: all
+  become: true
+  tasks:
+    - name: Create hellotxt on r2, testavimo tikslais
+      raw: echo sw > hir2.txt
+
+    - name: add ip
+      raw: net add interface swp1 ip address 192.168.15.79/24
+
+    - name: add autonoumous-system
+      raw: net add bgp autonomous-system 65001
+
+    - name: add bgp neighbor
+      raw: net add bgp neighbor 192.168.15.78 remote-as 65000
+
+    - name: finish adding bgp neighbor
+      raw: net add bgp ipv4 unicast neighbor 192.168.15.78 activate
+
+    - name: commit changes
+      raw: net commit
+    
+      

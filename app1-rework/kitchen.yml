@@ -1,0 +1,24 @@
+driver:
+  name: vagrant
+
+platforms:
+  - name: cumulus
+    driver:
+      box: "CumulusCommunity/cumulus-vx"
+      box_version: "4.3.0"
+      provision: true
+      vagrantfiles: ['provision_cumulus.rb']
+
+provisioner:
+  name: ansible_playbook  
+  ansible_verbose: true
+  hosts: all
+  require_ansible_repo: false
+
+suites:
+  - name: r1
+    provisioner:  
+      playbook: r1.yml
+  - name: r2
+    provisioner:  
+      playbook: r2.yml

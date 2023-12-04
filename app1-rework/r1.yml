@@ -1,0 +1,49 @@
+---
+- name: say hi
+  hosts: all
+  become: true
+  tasks:
+    - name: Create hellotxt on r1, testavimo tikslais
+      raw: echo sw > hir1.txt
+
+#     - name: BGP default-r1
+#       raw: net add bgp autonomous-system 65000
+#       when: inventory_hostname == 'default-r1'
+
+#     - name: default-r1 p1
+#       raw: net add bgp neighbor 192.168.15.79 remote-as 65001
+#       when: inventory_hostname == 'default-r1'
+
+#     - name: default-r1 p2
+#       raw: net add bgp ipv4 unicast neighbor 192.168.15.79 activate
+#       when: inventory_hostname == 'default-r1'
+
+#     - name: default-r1 p3
+#       raw: net commit
+#       when: inventory_hostname == 'default-r1'
+
+#     - name: Create hellotxt on default-r2, testavimo tikslais
+#       raw: echo sw2 > sw2.txt
+#       when: inventory_hostname == 'default-r2'
+- name: say hi
+  hosts: all
+  become: true
+  tasks:
+    - name: Create hellotxt on r1, testavimo tikslais
+      raw: echo sw > hir1.txt
+
+    - name: add ip
+      raw: net add interface swp1 ip address 192.168.15.78/24
+
+    - name: add autonoumous-system
+      raw: net add bgp autonomous-system 65000
+
+    - name: add bgp neighbor
+      raw: net add bgp neighbor 192.168.15.79 remote-as 65001
+
+    - name: finish adding bgp neighbor
+      raw: net add bgp ipv4 unicast neighbor 192.168.15.79 activate
+
+    - name: commit changes
+      raw: net commit
+      

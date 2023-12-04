@@ -1,0 +1,12 @@
+load "/home/audmas/Desktop/zzz/provision_cumulus.rb"
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "CumulusCommunity/cumulus-vx"
+  c.vm.box_version = "4.3.0"
+  c.vm.hostname = "r1-r2.vagrantup.com"
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+    p.name = "kitchen-zzz-r1-r2-396cd564-d5b3-4797-b98d-29f447a51eb3"
+    p.customize ["modifyvm", :id, "--audio", "none"]
+  end
+end

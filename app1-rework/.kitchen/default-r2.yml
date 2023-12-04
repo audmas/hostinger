@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2202'
+username: vagrant
+ssh_key: "/home/audmas/Desktop/zzz/.kitchen/kitchen-vagrant/default-r2/.vagrant/machines/default/virtualbox/private_key"
+last_action: converge
+last_error: Kitchen::ActionFailed

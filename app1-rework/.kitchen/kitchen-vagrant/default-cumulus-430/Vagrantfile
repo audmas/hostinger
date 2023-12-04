@@ -1,0 +1,10 @@
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "cumulus-4.3.0"
+  c.vm.hostname = "default-cumulus-430.vagrantup.com"
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+    p.name = "kitchen-zzz-default-cumulus-430-4e7279b9-36e2-4c0e-8249-08b20dfd6823"
+    p.customize ["modifyvm", :id, "--audio", "none"]
+  end
+end

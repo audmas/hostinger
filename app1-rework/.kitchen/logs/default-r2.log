@@ -1,0 +1,110 @@
+I, [2023-12-03T17:56:35.852962 #63750]  INFO -- default-r2: -----> Converging <default-r2>...
+I, [2023-12-03T17:56:35.853934 #63750]  INFO -- default-r2: Preparing files for transfer
+I, [2023-12-03T17:56:35.854114 #63750]  INFO -- default-r2: Preparing playbook
+I, [2023-12-03T17:56:35.854746 #63750]  INFO -- default-r2: Preparing inventory
+I, [2023-12-03T17:56:35.854888 #63750]  INFO -- default-r2: Preparing modules
+I, [2023-12-03T17:56:35.855569 #63750]  INFO -- default-r2: nothing to do for modules
+I, [2023-12-03T17:56:35.855695 #63750]  INFO -- default-r2: Preparing roles
+I, [2023-12-03T17:56:35.935864 #63750]  INFO -- default-r2: Preparing ansible.cfg file
+I, [2023-12-03T17:56:35.936097 #63750]  INFO -- default-r2: Empty ansible.cfg generated
+I, [2023-12-03T17:56:35.936272 #63750]  INFO -- default-r2: Preparing group_vars
+I, [2023-12-03T17:56:35.936584 #63750]  INFO -- default-r2: nothing to do for group_vars
+I, [2023-12-03T17:56:35.936710 #63750]  INFO -- default-r2: Preparing additional_copy_path
+I, [2023-12-03T17:56:35.936921 #63750]  INFO -- default-r2: Preparing host_vars
+I, [2023-12-03T17:56:35.937169 #63750]  INFO -- default-r2: nothing to do for host_vars
+I, [2023-12-03T17:56:35.937273 #63750]  INFO -- default-r2: Preparing hosts file
+I, [2023-12-03T17:56:35.937516 #63750]  INFO -- default-r2: Preparing spec
+I, [2023-12-03T17:56:35.937706 #63750]  INFO -- default-r2: nothing to do for spec
+I, [2023-12-03T17:56:35.937790 #63750]  INFO -- default-r2: Preparing library plugins
+I, [2023-12-03T17:56:35.938109 #63750]  INFO -- default-r2: nothing to do for library plugins
+I, [2023-12-03T17:56:35.938195 #63750]  INFO -- default-r2: Preparing callback plugins
+I, [2023-12-03T17:56:35.938519 #63750]  INFO -- default-r2: nothing to do for callback plugins
+I, [2023-12-03T17:56:35.938610 #63750]  INFO -- default-r2: Preparing filter_plugins
+I, [2023-12-03T17:56:35.938878 #63750]  INFO -- default-r2: nothing to do for filter_plugins
+I, [2023-12-03T17:56:35.938978 #63750]  INFO -- default-r2: Preparing lookup_plugins
+I, [2023-12-03T17:56:35.939311 #63750]  INFO -- default-r2: nothing to do for lookup_plugins
+I, [2023-12-03T17:56:35.939538 #63750]  INFO -- default-r2: Preparing ansible vault password
+I, [2023-12-03T17:56:35.939749 #63750]  INFO -- default-r2: Preparing additional_ssh_private_keys
+I, [2023-12-03T17:56:35.939964 #63750]  INFO -- default-r2: nothing to do for additional_ssh_private_keys
+I, [2023-12-03T17:56:35.940058 #63750]  INFO -- default-r2: Finished Preparing files for transfer
+I, [2023-12-03T17:56:36.325168 #63750]  INFO -- default-r2: Transferring files to <default-r2>
+I, [2023-12-03T17:56:39.393613 #63750]  INFO -- default-r2: [0;34mUsing /etc/ansible/ansible.cfg as config file[0m
+I, [2023-12-03T17:56:39.423230 #63750]  INFO -- default-r2: [1;35m[WARNING]: Invalid characters were found in group names but not replaced, use[0m
+I, [2023-12-03T17:56:39.423944 #63750]  INFO -- default-r2: [1;35m-vvvv to see details[0m
+I, [2023-12-03T17:56:39.967410 #63750]  INFO -- default-r2: 
+I, [2023-12-03T17:56:39.967986 #63750]  INFO -- default-r2: PLAY [Apply Ansible Playbook to Vagrant VMs] ***********************************
+I, [2023-12-03T17:56:40.002238 #63750]  INFO -- default-r2: 
+I, [2023-12-03T17:56:40.002740 #63750]  INFO -- default-r2: TASK [Gathering Facts] *********************************************************
+I, [2023-12-03T17:56:43.567493 #63750]  INFO -- default-r2: [1;35m[WARNING]: Platform linux on host localhost is using the discovered Python[0m
+I, [2023-12-03T17:56:43.568799 #63750]  INFO -- default-r2: [1;35minterpreter at /usr/bin/python, but future installation of another Python[0m
+I, [2023-12-03T17:56:43.569253 #63750]  INFO -- default-r2: [1;35minterpreter could change this. See https://docs.ansible.com/ansible/2.9/referen[0m
+I, [2023-12-03T17:56:43.569633 #63750]  INFO -- default-r2: [1;35mce_appendices/interpreter_discovery.html for more information.[0m
+I, [2023-12-03T17:56:43.570006 #63750]  INFO -- default-r2: [0;32mok: [localhost][0m
+I, [2023-12-03T17:56:43.614302 #63750]  INFO -- default-r2: 
+I, [2023-12-03T17:56:43.615234 #63750]  INFO -- default-r2: TASK [Testavimo tikslais] ******************************************************
+I, [2023-12-03T17:56:43.693717 #63750]  INFO -- default-r2: [0;33mchanged: [localhost] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}[0m
+I, [2023-12-03T17:56:43.705195 #63750]  INFO -- default-r2: 
+I, [2023-12-03T17:56:43.705694 #63750]  INFO -- default-r2: PLAY [Configure BGP] ***********************************************************
+I, [2023-12-03T17:56:43.753677 #63750]  INFO -- default-r2: 
+I, [2023-12-03T17:56:43.754106 #63750]  INFO -- default-r2: TASK [Gathering Facts] *********************************************************
+I, [2023-12-03T17:56:46.132763 #63750]  INFO -- default-r2: [0;32mok: [localhost][0m
+I, [2023-12-03T17:56:46.172794 #63750]  INFO -- default-r2: 
+I, [2023-12-03T17:56:46.173487 #63750]  INFO -- default-r2: TASK [Create hellotxt on r1, testavimo tikslais] *******************************
+I, [2023-12-03T17:56:46.273429 #63750]  INFO -- default-r2: [0;31mfatal: [localhost]: FAILED! => {"msg": "The conditional check 'hostname == 'r1'' failed. The error was: error while evaluating conditional (hostname == 'r1'): 'hostname' is undefined\n\nThe error appears to be in '/tmp/kitchen/playbook.yml': line 14, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Create hellotxt on r1, testavimo tikslais\n      ^ here\n"}[0m
+I, [2023-12-03T17:56:46.278186 #63750]  INFO -- default-r2: 
+I, [2023-12-03T17:56:46.278749 #63750]  INFO -- default-r2: PLAY RECAP *********************************************************************
+I, [2023-12-03T17:56:46.279630 #63750]  INFO -- default-r2: [0;31mlocalhost[0m                  : [0;32mok=3   [0m [0;33mchanged=1   [0m unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   
+I, [2023-12-03T17:56:46.279976 #63750]  INFO -- default-r2: 
+E, [2023-12-03T17:56:46.397421 #63750] ERROR -- default-r2: Converge failed on instance <default-r2>.
+E, [2023-12-03T17:56:46.397627 #63750] ERROR -- default-r2: ------Exception-------
+E, [2023-12-03T17:56:46.397670 #63750] ERROR -- default-r2: Class: Kitchen::ActionFailed
+E, [2023-12-03T17:56:46.397698 #63750] ERROR -- default-r2: Message: SSH exited (2) for command: [          
+          
+          ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules -v         /tmp/kitchen/playbook.yml
+]
+E, [2023-12-03T17:56:46.397724 #63750] ERROR -- default-r2: ----------------------
+E, [2023-12-03T17:56:46.397748 #63750] ERROR -- default-r2: ------Backtrace-------
+E, [2023-12-03T17:56:46.397772 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2023-12-03T17:56:46.397797 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2023-12-03T17:56:46.397823 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2023-12-03T17:56:46.397848 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2023-12-03T17:56:46.397873 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:524:in `block in action'
+E, [2023-12-03T17:56:46.397897 #63750] ERROR -- default-r2: /usr/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2023-12-03T17:56:46.397921 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:523:in `action'
+E, [2023-12-03T17:56:46.397946 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2023-12-03T17:56:46.397972 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2023-12-03T17:56:46.398033 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2023-12-03T17:56:46.398065 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2023-12-03T17:56:46.398092 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `each'
+E, [2023-12-03T17:56:46.398119 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2023-12-03T17:56:46.398143 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:139:in `converge'
+E, [2023-12-03T17:56:46.398170 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `public_send'
+E, [2023-12-03T17:56:46.398196 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2023-12-03T17:56:46.398223 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2023-12-03T17:56:46.398250 #63750] ERROR -- default-r2: ----End Backtrace-----
+E, [2023-12-03T17:56:46.398275 #63750] ERROR -- default-r2: ---Nested Exception---
+E, [2023-12-03T17:56:46.398301 #63750] ERROR -- default-r2: Class: Kitchen::Transport::SshFailed
+E, [2023-12-03T17:56:46.398327 #63750] ERROR -- default-r2: Message: SSH exited (2) for command: [          
+          
+          ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules -v         /tmp/kitchen/playbook.yml
+]
+E, [2023-12-03T17:56:46.398354 #63750] ERROR -- default-r2: ----------------------
+E, [2023-12-03T17:56:46.398380 #63750] ERROR -- default-r2: ------Backtrace-------
+E, [2023-12-03T17:56:46.398407 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2023-12-03T17:56:46.398432 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2023-12-03T17:56:46.398457 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2023-12-03T17:56:46.398484 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2023-12-03T17:56:46.398511 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:524:in `block in action'
+E, [2023-12-03T17:56:46.398536 #63750] ERROR -- default-r2: /usr/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2023-12-03T17:56:46.398559 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:523:in `action'
+E, [2023-12-03T17:56:46.398605 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2023-12-03T17:56:46.398631 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2023-12-03T17:56:46.398656 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2023-12-03T17:56:46.398680 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2023-12-03T17:56:46.398705 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `each'
+E, [2023-12-03T17:56:46.398730 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2023-12-03T17:56:46.398754 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:139:in `converge'
+E, [2023-12-03T17:56:46.398792 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `public_send'
+E, [2023-12-03T17:56:46.398819 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2023-12-03T17:56:46.398846 #63750] ERROR -- default-r2: /var/lib/gems/2.7.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2023-12-03T17:56:46.398874 #63750] ERROR -- default-r2: ----End Backtrace-----
