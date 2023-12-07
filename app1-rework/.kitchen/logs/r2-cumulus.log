@@ -1,0 +1,66 @@
+I, [2023-12-07T03:50:50.601170 #83680]  INFO -- r2-cumulus: -----> Setting up <r2-cumulus>...
+I, [2023-12-07T03:50:50.601640 #83680]  INFO -- r2-cumulus: Finished setting up <r2-cumulus> (0m0.00s).
+I, [2023-12-07T03:50:50.601736 #83680]  INFO -- r2-cumulus: -----> Verifying <r2-cumulus>...
+I, [2023-12-07T03:50:50.601963 #83680]  INFO -- r2-cumulus: [Serverspec] Verify on instance=#<Kitchen::Instance:0x0000555642e618b8> with state={:hostname=>"127.0.0.1", :port=>"2222", :username=>"vagrant", :ssh_key=>"/home/audmas/Desktop/app1/app1-rework/.kitchen/kitchen-vagrant/r2-cumulus/.vagrant/machines/default/virtualbox/private_key", :last_action=>"setup", :last_error=>nil}
+I, [2023-12-07T03:50:50.602015 #83680]  INFO -- r2-cumulus: Environment variable KITCHEN_HOSTNAME value 127.0.0.1
+I, [2023-12-07T03:50:50.602047 #83680]  INFO -- r2-cumulus: Environment variable KITCHEN_PORT value 2222
+I, [2023-12-07T03:50:50.602072 #83680]  INFO -- r2-cumulus: Environment variable KITCHEN_USERNAME value vagrant
+I, [2023-12-07T03:50:50.602098 #83680]  INFO -- r2-cumulus: Environment variable KITCHEN_SSH_KEY value /home/audmas/Desktop/app1/app1-rework/.kitchen/kitchen-vagrant/r2-cumulus/.vagrant/machines/default/virtualbox/private_key
+I, [2023-12-07T03:50:50.602123 #83680]  INFO -- r2-cumulus: Environment variable KITCHEN_LAST_ACTION value setup
+I, [2023-12-07T03:50:50.602149 #83680]  INFO -- r2-cumulus: Environment variable KITCHEN_LAST_ERROR value 
+I, [2023-12-07T03:50:50.602176 #83680]  INFO -- r2-cumulus: Transport Environment variable KITCHEN_USERNAME value root
+I, [2023-12-07T03:50:50.602204 #83680]  INFO -- r2-cumulus: Transport Environment variable KITCHEN_PORT value 22
+I, [2023-12-07T03:50:50.602281 #83680]  INFO -- r2-cumulus: Installing ruby, bundler and serverspec remotely on server
+I, [2023-12-07T03:50:50.755763 #83680]  INFO -- r2-cumulus: -----> Installing bundler via rubygems
+I, [2023-12-07T03:50:50.997939 #83680]  INFO -- r2-cumulus: Bundler already installed
+I, [2023-12-07T03:50:51.210909 #83680]  INFO -- r2-cumulus: ---> BUNDLE_CMD variable is: /usr/bin/bundle
+I, [2023-12-07T03:50:51.402538 #83680]  INFO -- r2-cumulus: [33mDon't run Bundler as root. Bundler can ask for sudo if it is needed, and
+I, [2023-12-07T03:50:51.402725 #83680]  INFO -- r2-cumulus: installing your bundle as root will break this application for all non-root
+I, [2023-12-07T03:50:51.402856 #83680]  INFO -- r2-cumulus: users on this machine.[0m
+I, [2023-12-07T03:50:54.435708 #83680]  INFO -- r2-cumulus: Fetching gem metadata from https://rubygems.org/....
+I, [2023-12-07T03:50:54.539735 #83680]  INFO -- r2-cumulus: Resolving dependencies...
+I, [2023-12-07T03:50:54.563561 #83680]  INFO -- r2-cumulus: Using bundler 1.17.3
+I, [2023-12-07T03:50:54.564553 #83680]  INFO -- r2-cumulus: [32mFetching diff-lcs 1.5.0[0m
+I, [2023-12-07T03:50:54.715331 #83680]  INFO -- r2-cumulus: [32mInstalling diff-lcs 1.5.0[0m
+I, [2023-12-07T03:50:54.775108 #83680]  INFO -- r2-cumulus: [32mFetching multi_json 1.15.0[0m
+I, [2023-12-07T03:50:54.887728 #83680]  INFO -- r2-cumulus: [32mInstalling multi_json 1.15.0[0m
+I, [2023-12-07T03:50:54.919673 #83680]  INFO -- r2-cumulus: [32mFetching net-ssh 3.2.0[0m
+I, [2023-12-07T03:50:55.122316 #83680]  INFO -- r2-cumulus: [32mInstalling net-ssh 3.2.0[0m
+I, [2023-12-07T03:50:55.200804 #83680]  INFO -- r2-cumulus: [32mFetching net-scp 4.0.0[0m
+I, [2023-12-07T03:50:55.317355 #83680]  INFO -- r2-cumulus: [32mInstalling net-scp 4.0.0[0m
+I, [2023-12-07T03:50:55.344304 #83680]  INFO -- r2-cumulus: Using net-telnet 0.1.1
+I, [2023-12-07T03:50:55.344779 #83680]  INFO -- r2-cumulus: [32mFetching rspec-support 3.12.1[0m
+I, [2023-12-07T03:50:55.488103 #83680]  INFO -- r2-cumulus: [32mInstalling rspec-support 3.12.1[0m
+I, [2023-12-07T03:50:55.525314 #83680]  INFO -- r2-cumulus: [32mFetching rspec-core 3.12.2[0m
+I, [2023-12-07T03:50:55.710749 #83680]  INFO -- r2-cumulus: [32mInstalling rspec-core 3.12.2[0m
+I, [2023-12-07T03:50:55.763272 #83680]  INFO -- r2-cumulus: [32mFetching rspec-expectations 3.12.3[0m
+I, [2023-12-07T03:50:55.916400 #83680]  INFO -- r2-cumulus: [32mInstalling rspec-expectations 3.12.3[0m
+I, [2023-12-07T03:50:55.950841 #83680]  INFO -- r2-cumulus: [32mFetching rspec-mocks 3.12.6[0m
+I, [2023-12-07T03:50:56.087979 #83680]  INFO -- r2-cumulus: [32mInstalling rspec-mocks 3.12.6[0m
+I, [2023-12-07T03:50:56.113409 #83680]  INFO -- r2-cumulus: [32mFetching rspec 3.12.0[0m
+I, [2023-12-07T03:50:56.223853 #83680]  INFO -- r2-cumulus: [32mInstalling rspec 3.12.0[0m
+I, [2023-12-07T03:50:56.246476 #83680]  INFO -- r2-cumulus: [32mFetching rspec-its 1.3.0[0m
+I, [2023-12-07T03:50:56.356097 #83680]  INFO -- r2-cumulus: [32mInstalling rspec-its 1.3.0[0m
+I, [2023-12-07T03:50:56.383233 #83680]  INFO -- r2-cumulus: [32mFetching sfl 2.3[0m
+I, [2023-12-07T03:50:56.490991 #83680]  INFO -- r2-cumulus: [32mInstalling sfl 2.3[0m
+I, [2023-12-07T03:50:56.517922 #83680]  INFO -- r2-cumulus: [32mFetching specinfra 2.87.0[0m
+I, [2023-12-07T03:50:56.676194 #83680]  INFO -- r2-cumulus: [32mInstalling specinfra 2.87.0[0m
+I, [2023-12-07T03:50:56.871822 #83680]  INFO -- r2-cumulus: [32mFetching serverspec 2.42.3[0m
+I, [2023-12-07T03:50:57.009178 #83680]  INFO -- r2-cumulus: [32mInstalling serverspec 2.42.3[0m
+I, [2023-12-07T03:50:57.085901 #83680]  INFO -- r2-cumulus: [32mBundle complete! 2 Gemfile dependencies, 15 gems now installed.[0m
+I, [2023-12-07T03:50:57.086125 #83680]  INFO -- r2-cumulus: [32mUse `bundle info [gemname]` to see where a bundled gem is installed.[0m
+I, [2023-12-07T03:50:57.130191 #83680]  INFO -- r2-cumulus: Running Serverspec
+I, [2023-12-07T03:50:57.177375 #83680]  INFO -- r2-cumulus: ---> RSPEC_CMD variable is: /usr/local/bin/rspec
+I, [2023-12-07T03:50:57.584268 #83680]  INFO -- r2-cumulus: 
+I, [2023-12-07T03:50:57.584453 #83680]  INFO -- r2-cumulus: Command "cat hir2.txt"
+I, [2023-12-07T03:50:57.584587 #83680]  INFO -- r2-cumulus:   stdout
+I, [2023-12-07T03:50:57.653155 #83680]  INFO -- r2-cumulus: [32m    is expected to match /sw/[0m
+I, [2023-12-07T03:50:57.653314 #83680]  INFO -- r2-cumulus: 
+I, [2023-12-07T03:50:57.653464 #83680]  INFO -- r2-cumulus: Command "net show bgp neighbor 192.168.15.78"
+I, [2023-12-07T03:50:57.653819 #83680]  INFO -- r2-cumulus:   stdout
+I, [2023-12-07T03:50:57.804819 #83680]  INFO -- r2-cumulus: [32m    is expected to match /BGP state = Established/[0m
+I, [2023-12-07T03:50:57.805655 #83680]  INFO -- r2-cumulus: 
+I, [2023-12-07T03:50:57.805827 #83680]  INFO -- r2-cumulus: Finished in 0.22308 seconds (files took 0.30836 seconds to load)
+I, [2023-12-07T03:50:57.805951 #83680]  INFO -- r2-cumulus: [32m2 examples, 0 failures[0m
+I, [2023-12-07T03:50:57.806048 #83680]  INFO -- r2-cumulus: 
+I, [2023-12-07T03:50:57.820443 #83680]  INFO -- r2-cumulus: Finished verifying <r2-cumulus> (0m7.22s).

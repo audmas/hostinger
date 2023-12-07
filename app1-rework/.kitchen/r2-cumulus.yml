@@ -1,7 +1,7 @@
 ---
 hostname: 127.0.0.1
-port: '2202'
+port: '2222'
 username: vagrant
-ssh_key: "/home/audmas/Desktop/zzz/.kitchen/kitchen-vagrant/r2-cumulus/.vagrant/machines/default/virtualbox/private_key"
-last_action: converge
+ssh_key: "/home/audmas/Desktop/app1/app1-rework/.kitchen/kitchen-vagrant/r2-cumulus/.vagrant/machines/default/virtualbox/private_key"
+last_action: verify
 last_error: 

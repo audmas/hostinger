@@ -10,15 +10,29 @@ platforms:
       vagrantfiles: ['provision_cumulus.rb']
 
 provisioner:
-  name: ansible_playbook  
+  name: ansible_playbook
   ansible_verbose: true
   hosts: all
   require_ansible_repo: false
 
+verifier:
+  name: serverspec
+
 suites:
   - name: r1
-    provisioner:  
+    provisioner:
       playbook: r1.yml
+    verifier:
+      default_pattern: no
+      patterns:
+        - roles/app1-rework/test/integration/default/test1_spec.rb
+      rspec_path: '/usr/local/bin'
+
   - name: r2
-    provisioner:  
+    provisioner:
       playbook: r2.yml
+    verifier:
+      default_pattern: no
+      patterns:
+        - roles/app1-rework/test/integration/default/test2_spec.rb
+      rspec_path: '/usr/local/bin'
